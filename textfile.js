@@ -2,4 +2,9 @@ var list = 	["This is your last call if you're going home. ",
 		"Slumber through the day. Hunt in disguise.",
 		"Minds stretching inward. Like a chewing gum. In afterlife. ",
 		"Frown and scream in dislike. ",
-		"Just simmer."];
+		"Just simmer.",
+		"Where is my autopilot knob?",
+		"The worst in the lot.",
+		"Keep on tempting fate.",
+		"Cold skulls and pretty colored lights.",
+		"Please, don't."];

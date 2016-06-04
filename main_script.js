@@ -1,4 +1,4 @@
-var w, columns, rows, string, string2, randCount, text1;
+var w, h, columns, rows, string, string2, randCount, text1;
 var clickFlag = 1;
 var s = '-';
 
@@ -8,11 +8,13 @@ var s = '-';
 // }
 function setup() {
 
-  createCanvas(500, 200);
-  w = 30;
+  var can = createCanvas(500, 300);
+  can.parent("box");
+  w = 30; 
+  h = 45;
   // Calculate columns and rows
   columns = floor(width/w);
-  rows = floor(height/w);
+  rows = floor(height/h);
 
   board = new Array(columns);
   for (var i = 0; i < columns; i++) {
@@ -21,7 +23,7 @@ function setup() {
 // text1 = loadJSON('textfile.json');
 // console.log(text1);
 
-string = "Click.        Click."
+string = "Click.    Click."
 string.split('');
 string2 = reshape(string);
 // console.log(string2);
@@ -37,7 +39,8 @@ setArray(randCount,0);
 
 function draw() {
 
-  background(255);
+  background(0,0,0,0);
+  clear();
   for ( var i = 0; i < columns;i++) {
     for ( var j = 0; j < rows;j++) {
       // s = string2[i][j];
@@ -53,18 +56,19 @@ function draw() {
         s = string2[i][j];
       }
 
-      stroke(0);
+      noStroke();
       // console.log(s);
-      fill(0);
+      noFill();
       rect(i*w, j*w, w-1, w-1);
       fill(10,200,0);
       textFont("Courier");
       textSize(14);
-      text(s,i*w+8, j*w+8, w-1, w-1);
+      text(s,i*w+8, j*h+8, w-1, h-1);
       // console.log(string[i]);
 
     }
   }
+  // clear();
 }
 
 function makeid()
