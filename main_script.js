@@ -1,13 +1,16 @@
 var w, h, columns, rows, string, string2, randCount, text1;
 var clickFlag = 1;
 var s = '-';
+var song;
 
-// function preload() {
+function preload() {
 
-//   text = loadJSON('textfile.json');
-// }
+song = loadSound('assets/soundcheck7.mp3');
+}
+
 function setup() {
 
+  
   var can = createCanvas(500, 300);
   can.parent("box");
   w = 30; 
@@ -35,6 +38,7 @@ string2 = reshape(string);
 
 setArray(randCount,0);
 
+song.loop();
 }
 
 function draw() {
@@ -60,7 +64,7 @@ function draw() {
       // console.log(s);
       noFill();
       rect(i*w, j*w, w-1, w-1);
-      fill(10,200,0);
+      fill(160,50,50);
       textFont("Courier");
       textSize(14);
       text(s,i*w+8, j*h+8, w-1, h-1);

@@ -1,4 +1,5 @@
-var list = 	["This is your last call if you're going home. ",
+var list = 	["Wretched Existence",
+		"This is your last call if you're going home. ",
 		"Slumber through the day. Hunt in disguise.",
 		"Minds stretching inward. Like a chewing gum. In afterlife. ",
 		"Frown and scream in dislike. ",
@@ -7,4 +8,10 @@ var list = 	["This is your last call if you're going home. ",
 		"The worst in the lot.",
 		"Keep on tempting fate.",
 		"Cold skulls and pretty colored lights.",
-		"Please, don't."];
+		"Please, don't.",
+		"The designated driver has gone berserk.",
+		"Stand clear of the closing doors.",
+		"If you see something, say something. Anything.",
+		"Don't mind the man behind the curtain.",
+		"I remember everything.",
+		"Smash the lamps"];
